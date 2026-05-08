@@ -14,6 +14,24 @@ Robust implementations of direct and iterative methods for large-scale systems.
 * **Iterative Methods:** Richardson iteration with optimal parameters and Preconditioned (B-Method) solvers.
 * **Eigenvalue Problems:** Bisection method and Sturm sequences for symmetric matrices.
 
+
+### 2. [PDE &amp; ODE Numerical Methods](./pde-numerical-methods) (C++ & Python)
+
+Advanced solvers for differential equations and stability research. This is the core research module of the repository.
+
+* **Classical Finite-Difference Schemes:**
+  * **Heat Equation (1D/2D):** Implementation of explicit and implicit schemes (TDMA/Thomas Algorithm).
+  * **ODE Analysis:** Comparative study of Euler, Trapezoidal, and Adams methods with convergence order verification.
+  * **Convection-Diffusion:** Stability analysis of Upwind vs. Central difference schemes based on the **Peclet number ($Pe$)**.
+* **Spectral Methods:**
+  * **Fourier Spectral Solvers:** High-accuracy boundary value problem solvers using trigonometric bases.
+  * **Convergence Research:** Experimental proof of spectral (exponential) accuracy on refining grids.
+* **Inverse & Ill-posed Problems:**
+  * **Tikhonov Regularization:** Solving Hadamard ill-posed source recovery problems with optimal $\alpha$ selection via L-curve analysis.
+  * **Quasireversibility Method:** "Backward-in-time" heat conduction recovery, stabilizing high-frequency noise in unstable parabolic systems.
+* **Dynamic Stabilization:**
+  * **Modal Control:** Stabilization of "exploding" systems ($\text{Re}(\lambda) > 0$) using projection onto biorthogonal bases.
+
 ### 3. [Numerical Integration Suite](./numerical-integration) (C++)
 
 High-precision integration for univariate and bivariate functions.
